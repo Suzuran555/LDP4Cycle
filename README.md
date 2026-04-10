@@ -2,6 +2,7 @@
 
 # Directory Structure
 - cpp/			&emsp;C/C++ codes.
+- python/		&emsp;python codes
 - data/		&emsp;datasets
 - README.md		&emsp;This file.
 
