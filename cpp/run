@@ -1,0 +1,14 @@
+#!/bin/bash
+if [ $# -ne 1 ]; then
+    echo "USAGE: run_SubgraphShuffle.sh [Dataset]"
+    exit 1
+fi
+make
+for i in 0.5 0.75 1 1.25 1.5 2 3
+do
+  # ./SubgraphShuffle ../data/${1}/edges.csv -1 ${i}-8 -1 20-1 5
+
+  ./SubgraphShuffle ../data/${1}/edges.csv -1 ${i}-8 -1 20-1 1
+
+  ./SubgraphShuffle ../data/${1}/edges.csv -1 ${i}-8 -1 20-1 9
+done
