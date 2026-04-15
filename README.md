@@ -50,7 +50,7 @@ Run the following commands ([Dataset] is "Gplus" or "IMDB" or any datasets liste
 ```
 $ cd cpp/
 $ chmod +x run
-$ ./run [Dataset (Gplus/IMDB/etc.)]
+$ ./run [Dataset (Gplus/IMDB/etc.)] # for example: ./run 
 $ cd ../
 ```
 For more details of parameter settings, see Usage of SubgraphShuffle.
@@ -65,6 +65,7 @@ $ python3 plot_results.py
 $ cd ../
 ```
 
+You can see a bunch of plot_[dataset].py files in the directory data/ .
 
 # Execution Environment
 We used CentOS 7.5 with gcc 4.8.5.

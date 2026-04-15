@@ -6,6 +6,10 @@ fi
 make
 for i in 0.5 0.75 1 1.25 1.5 2 3
 do
+  echo "start running $1 with privacy budget $i..."
+
+  # algorithm 5 (one round) is commented by default since running it takes considerably long time
+  
   # ./SubgraphShuffle ../data/${1}/edges.csv -1 ${i}-8 -1 20-1 5
 
   ./SubgraphShuffle ../data/${1}/edges.csv -1 ${i}-8 -1 20-1 1
